@@ -34,6 +34,6 @@ app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, 'frontend/build/index.html'));
 });
 
-app.listen(process.env.port || 8000, () => {
-    console.log('Express app is running on 8000')
+app.listen(process.env.port || 8080, () => {
+    console.log('Express app is running on 8080')
 });

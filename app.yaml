@@ -11,12 +11,12 @@ resources:
   memory_gb: 0.5
   disk_size_gb: 10
 
-env_variables:
-  mongourl: "mongodb+srv://Admin:UHdSdbdc4kYAJ6yc@mern-cluster.irryu.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority"
+# env_variables:
+#   MONGO_DB: "mongodb+srv://Admin:UHdSdbdc4kYAJ6yc@mern-cluster.irryu.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority"
 
-# handlers:
-#   - url: /
-#     static_files: frontend/build/index.html
-#     upload: frontend/build/index.html
-#   - url: /
-#     static_dir: frontend/build
+handlers:
+  - url: /
+    static_files: frontend/build/index.html
+    upload: frontend/build/index.html
+  - url: /
+    static_dir: frontend/build
