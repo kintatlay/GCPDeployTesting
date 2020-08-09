@@ -1,18 +1,4 @@
-runtime: nodejs
-env: flex
-
-manual_scaling:
-  instances: 1
-
-resources:
-  cpu: .5
-
-  
-  memory_gb: 0.5
-  disk_size_gb: 10
-
-# env_variables:
-#   MONGO_DB: "mongodb+srv://Admin:UHdSdbdc4kYAJ6yc@mern-cluster.irryu.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority"
+runtime: nodejs10
 
 handlers:
   - url: /
